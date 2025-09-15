@@ -1,0 +1,124 @@
+:root {
+  --bg: #0e0f12;
+  --panel: #0f1116;
+  --text: #eef3ff;
+  --muted: #c8d1e6;
+  --link: #7fe3ff;
+  --bar: linear-gradient(90deg,#ff6b6b,#ffd93d,#6bff95,#6ad0ff,#a07cff,#ff6bd6);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  background: #000;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+}
+.logo {
+  width: 120px;
+  height: 54px;
+  background: #e5e8ef;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.title { flex: 1; font-weight: 600; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.bar { height: 8px; background: var(--bar); }
+
+.hero {
+  position: relative;
+  height: clamp(220px, 36vw, 380px);
+  background: #222 center/cover no-repeat;
+  background-image: url('../images/graffiti-art.jpg'),
+                    url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1600&auto=format&fit=crop');
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg,#0009,#0003 50%,#0000);
+}
+.hero-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+  color: #fff;
+}
+.hero-title span {
+  display: block;
+  font-size: clamp(28px, 6vw, 64px);
+  line-height: .95;
+  padding: .12em .4em;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  backdrop-filter: blur(1px);
+}
+
+.section {
+  background: #000;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+.section .container { padding: 24px 16px 36px; }
+h2 {
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0 0 12px;
+}
+.grid { display: flex; gap: 24px; align-items: flex-start; }
+.card {
+  flex: 1;
+  background: var(--panel);
+  border: 1px solid #ffffff22;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.teaser { flex: 1; color: var(--muted); font-size: 1.1rem; }
+
+footer { text-align: center; color: #aab2c7; padding: 20px 0 40px; }
+
+@media (max-width: 900px) {
+  nav ul { gap: 14px; flex-wrap: wrap; }
+  .logo { width: 96px; height: 44px; }
+  .grid { flex-direction: column; }
+}
