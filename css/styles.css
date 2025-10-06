@@ -31,6 +31,9 @@ header {
     background: #0e1424; 
     border-bottom: 1px solid #1c2845; 
     padding: 12px 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .brand { 
     display: inline-block; 
