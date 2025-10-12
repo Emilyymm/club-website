@@ -40,9 +40,9 @@ header {
     vertical-align: middle; 
 }
 .brand img { 
-    width: 44px; 
-    height: 44px; 
-    border-radius: 8px; 
+    width: 150px; 
+    height: 58px; 
+    border-radius: 10px;
 }
 .brand-name { 
     display: inline-block; 
@@ -78,10 +78,11 @@ nav a:hover {
 
 /* Banner */
 .banner { 
-    background: #091022; 
+    background: #091022 url("images/Banner.png") center / cover no-repeat;
+    min-height: 320px; 
 }
-.banner img { 
-    width: 100%; 
+@media (min-width: 1024px) {
+    .banner { min-height: 420px; }
 }
 
 /* Sections */
