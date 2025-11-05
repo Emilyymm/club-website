@@ -3,32 +3,55 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>San Jac Esports Club</title>
-    <meta name="description" content="San Jac Esports Club — teams, schedule, news, and how to join." />
+    <title>San Jac Esports</title>
+    <meta name="description" content="San Jac Esports — teams, schedule, news, and how to join." />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/favicon.ico" />
 </head>
 <body>
     <div id="background"></div>
+   <main class="hex-background">
 
-    <header>
-        <div class="nav-wrapper">
-            <a class="brand" href="#home" aria-label="San Jac Esports Club home">
-                <img src="images/sjlogo-removebg.png" alt="San Jac Esports Club logo" />
-            </a>
-            <div class="brand-name">San Jac Esports Club</div>
+   <header>
+    <div class="nav-wrapper">
+        <a class="brand" href="#home" aria-label="San Jac Esports Club home">
+            <img src="images/sjlogo-removebg.png" alt="San Jac Esports Club logo" />
+        </a>
+        <div class="brand-name">San Jac Esports</div>
 
-            <nav aria-label="Primary">
-                <ul>
-                    <li><a href="index.html"><span>Home</span></a></li>
-                    <li><a href="teams.html"><span>Teams</span></a></li>
-                    <li><a href="schedule.html"><span>Schedule</span></a></li>
-                    <li><a href="news.html"><span>News</span></a></li>
-                    <li><a href="join.html"><span>Join</span></a></li>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li class="teams-list">
+                <a href="#"><span>Teams</span></a>
+                <ul class="dropdown">
+                <li><a href="blackops6.html" target="_blank"><span>Black Ops 6</span></a></li>
+                <li><a href="nba2k.html" target="_blank"><span>NBA 2K</span></a></li>
+                <li><a href="smashbros.html" target="_blank"><span>Smash Bros</span></a></li>
+                <li><a href="marvelrivals.html" target="_blank"><span>Marvel Rivals</span></a></li>
+                <li><a href="leaguelegends.html" target="_blank"><span>League of Legends</span></a></li>
+                <li><a href="overwatch.html" target="_blank"><span>Overwatch</span></a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </li>
+                <li><a href="schedule.html"><span>Schedule</span></a></li>
+                <li><a href="news.html"><span>News</span></a></li>
+                <li><a href="join.html"><span>Join</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li class="social-media">
+                <a href="#"><span>Social Media</span></a>
+                <ul class="dropdown">
+                <li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="https://facebook.com" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/sjcd_ravenesports?igsh=aXozemI1Ymd5Z2R3" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="https://youtube.com" target="_blank"><span>YouTube</span></a></li>
+                </ul>
+            </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
 
     <section id="home" class="banner" aria-label="Site banner">
         <div class="slideshow">
@@ -39,7 +62,7 @@
     </section>
 
     <section aria-labelledby="about-title" class="about">
-        <h2 id="about-title">About</h2>
+        <h2 id="about-title"></h2>
         <p class="lead">
             We are the San Jac Esports Club — student-run, competition-focused, and open to all skill levels.
             Practice together, compete together, and level up together.
@@ -47,13 +70,13 @@
     </section>
 
     <section id="teams" aria-labelledby="teams-title">
-        <h2 id="teams-title">Teams & Titles</h2>
+        <h2 id="teams-title">Teams</h2>
         <ul class="teams-list">
             <li>
                 <article>
                     <a href="blackops6.html">
                         <figure>
-                            <img src="images/cod6.jpg" alt="Black Ops 6" />
+                            <img src="images/blackops6.jpg" alt="Black Ops 6" />
                             <figcaption>Black Ops 6</figcaption>
                         </figure>
                     </a>
@@ -61,34 +84,52 @@
             </li>
             <li>
                 <article>
+                    <a href="nba2k.html">
                     <figure>
                         <img src="images/nba2k.jpg" alt="NBA 2K" />
                         <figcaption>NBA 2K</figcaption>
                     </figure>
+                    </a>
                 </article>
             </li>
             <li>
                 <article>
+                    <a href="smashbros.html">
                     <figure>
-                        <img src="images/smashbros.jpg" alt="Smash Bros" />
+                        <img src="images/smashbrosultimate.jpg" alt="Smash Bros" />
                         <figcaption>Smash Bros</figcaption>
                     </figure>
+                    </a>
                 </article>
             </li>
             <li>
                 <article>
+                    <a href="marvelrivals.html">
                     <figure>
-                        <img src="images/rivals.jpg" alt="Rivals" />
-                        <figcaption>Rivals</figcaption>
+                        <img src="images/marvelrivals.jpg" alt="Rivals" />
+                        <figcaption>Marvel Rivals</figcaption>
                     </figure>
+                    </a>
                 </article>
             </li>
             <li>
                 <article>
+                    <a href="leaguelegends.html">
                     <figure>
-                        <img src="images/lol.jpg" alt="League of Legends" />
+                        <img src="images/leagueoflegends.png" alt="League of Legends" />
                         <figcaption>League of Legends</figcaption>
                     </figure>
+                    </a>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="overwatch.html">
+                    <figure>
+                        <img src="images/overwatch.jpg" alt="Overwatch" />
+                        <figcaption>Overwatch</figcaption>
+                    </figure>
+                    </a>
                 </article>
             </li>
         </ul>
@@ -146,7 +187,7 @@
         </table>
     </section>
 
-    <section class="join-news-container">
+<section class="join-news-container">
         <section id="join" aria-labelledby="join-title">
             <h2 id="join-title">Join San Jac Esports Club</h2>
             <form action="#" method="post">
@@ -201,17 +242,10 @@
         <p>&copy; <span id="year"></span> San Jac Esports Club. All rights reserved.</p>
     </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+</main>
 
-      const slides = document.querySelectorAll('.slideshow img');
-      let current = 0;
-      function showNextSlide() {
-          slides[current].classList.remove('active');
-          current = (current + 1) % slides.length;
-          slides[current].classList.add('active');
-      }
-      setInterval(showNextSlide, 4000);
-    </script>
+<script src="javascript/java.js"></script>
+
+
 </body>
 </html>
