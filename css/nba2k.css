@@ -139,7 +139,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* Dropdown */
+/* Dropdown for social media */
 nav ul li.social-media { position: relative; }
 nav ul li.social-media .dropdown {
     display: none;
@@ -165,6 +165,36 @@ nav ul li.social-media .dropdown li a {
     font-weight: 600;
 }
 nav ul li.social-media .dropdown li a:hover {
+    background: linear-gradient(135deg, #ffdf5d, #edee9c);
+    color: #000;
+}
+
+/* Dropdown for teams */
+nav ul li.teams-list { position: relative; }
+nav ul li.teams-list .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(135deg, #0f1b38, #1c2845);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    z-index: 50;
+}
+nav ul li.teams-list:hover .dropdown { display: block; }
+nav ul li.teams-list .dropdown li { display: block; width: 100%; }
+nav ul li.teams-list .dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    text-transform: none;
+    transform: none;
+    background: none;
+    font-weight: 600;
+}
+nav ul li.teams-list .dropdown li a:hover {
     background: linear-gradient(135deg, #ffdf5d, #edee9c);
     color: #000;
 }
