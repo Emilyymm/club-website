@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smash Bros</title>
+    <meta name="description" content="San Jac Esports — teams, schedule, news, and how to join." />
+    <link rel="stylesheet" href="css/smashbros.css" />
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+    <div id="background"></div>
+   <main class="hex-background">
+
+   <header>
+    <div class="nav-wrapper">
+        <a class="brand" href="#home" aria-label="San Jac Esports Club home">
+            <img src="images/sjlogo-removebg.png" alt="San Jac Esports Club logo" />
+        </a>
+        <div class="brand-name">Smash Bros</div>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+
+                <li class="teams-list">
+                <a href="#"><span>Teams</span></a>
+                <ul class="dropdown">
+                <li><a href="blackops6.html"><span>Black Ops 6</span></a></li>
+                <li><a href="nba2k.html"><span>NBA 2K</span></a></li>
+                <li><a href="smashbros.html"><span>Smash Bros</span></a></li>
+                <li><a href="marvelrivals.html"><span>Marvel Rivals</span></a></li>
+                <li><a href="leaguelegends.html"><span>League of Legends</span></a></li>
+                <li><a href="overwatch.html"><span>Overwatch</span></a></li>
+                </ul>
+                <li><a href="schedule.html"><span>Schedule</span></a></li>
+                <li><a href="news.html"><span>News</span></a></li>
+                <li><a href="join.html"><span>Join</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+
+                <li class="social-media">
+                <a href="#"><span>Social Media</span></a>
+                <ul class="dropdown">
+                <li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
+                <li><a href="https://facebook.com" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/sjcd_ravenesports?igsh=aXozemI1Ymd5Z2R3" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="https://youtube.com" target="_blank"><span>YouTube</span></a></li>
+                </ul>
+</li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section id="home" class="banner" aria-label="Site banner">
+        <div class="slideshow">
+            <img src="images/Banner1.png" alt="San Jac Esports Club banner 1" class="active">
+            <img src="images/Banner2.png" alt="San Jac Esports Club banner 2">
+            <img src="images/Banner3.png" alt="San Jac Esports Club banner 3">
+        </div>
+    </section>
+
+    <section aria-labelledby="about-title" class="about">
+        <h2 id="about-title"></h2>
+        <p class="lead">
+            The Black Ops 6 team values skill development, communication, and sportsmanship </br>in every match.
+        </p>
+    </section>
+
+    <section id="schedule" aria-labelledby="schedule-title">
+        <h2 id="schedule-title">Schedule</h2>
+        <table aria-describedby="schedule-title">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Game</th>
+                    <th scope="col">Opponent</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oct 10</td>
+                    <td>Black Ops 6</td>
+                    <td>Bay Area Tech</td>
+                    <td>6:00 PM</td>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <td>Oct 15</td>
+                    <td>NBA 2K</td>
+                    <td>Westview HS</td>
+                    <td>5:30 PM</td>
+                    <td>Campus LAN</td>
+                </tr>
+                <tr>
+                    <td>Oct 22</td>
+                    <td>Smash Bros</td>
+                    <td>East Ridge</td>
+                    <td>4:00 PM</td>
+                    <td>Campus Hall B</td>
+                </tr>
+                <tr>
+                    <td>Oct 28</td>
+                    <td>Marvel Rivals</td>
+                    <td>Northshore</td>
+                    <td>7:00 PM</td>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <td>Nov 02</td>
+                    <td>League of Legends</td>
+                    <td>Skyline College</td>
+                    <td>3:00 PM</td>
+                    <td>Campus LAN</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<section class="join-news-container">
+        <section id="join" aria-labelledby="join-title">
+            <h2 id="join-title">Join San Jac Esports</h2>
+            <form action="#" method="post">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required />
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+                <label for="role">Interest</label>
+                <select id="role" name="role">
+                    <option>Player</option>
+                    <option>Coach</option>
+                    <option>Analyst</option>
+                    <option>Content / Social</option>
+                    <option>General Member</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us your game(s), rank, and availability."></textarea>
+                <div class="actions">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="news" aria-labelledby="news-title">
+            <h2 id="news-title">News</h2>
+            <ul class="news">
+                <li>
+                    <time datetime="2025-09-30">Sep 30</time>
+                    Tryouts open for Black Ops 6 and League of Legends. Submit the Join form below.
+                </li>
+                <li>
+                    <time datetime="2025-09-18">Sep 18</time>
+                    Congratulations to our Smash squad for a 2–0 win vs. Westview!
+                </li>
+                <li>
+                    <time datetime="2025-09-05">Sep 5</time>
+                    Welcome back! Weekly club meetings on Wednesdays, Room A-214.
+                </li>
+            </ul>
+        </section>
+    </section>
+    </main>
+
+    <footer>
+        <img src="images/sjlogo-removebg.png"/>
+        <p class="footer-links" style="margin-top:10px;">
+          <a href="#home">Home</a>
+          <a href="#teams">Teams</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#news">News</a>
+          <a href="#join">Join</a>
+        </p>
+        <p>&copy; <span id="year"></span> San Jac Esports Club. All rights reserved.</p>
+    </footer>
+    
+<script src="javascript/java.js"></script>
+
+</body>
+</html>
