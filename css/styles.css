@@ -379,7 +379,7 @@ body::before {
 #toggle-news {
     position: fixed;
     right: 40px;
-    top: calc(50% - 140px);
+    top: calc(50% - 140px); /* adjust so button is above the news section */
     z-index: 101;
     padding: 6px 3px;
     background: #2a7de1;
