@@ -19,11 +19,11 @@ let opacity = 0.08;
 let increasing = true;
 
 function animateGlow() {
-    // much slower hue shift
+    
     hue = (hue + 0.05) % 360;
     body.style.setProperty("--glow-hue", hue);
 
-    // slower, smoother pulsing
+   
     if (increasing) {
         opacity += 0.0002;
         if (opacity >= 0.12) increasing = false;
@@ -37,3 +37,19 @@ function animateGlow() {
 }
 
 animateGlow();
+
+
+
+
+const newsSection = document.getElementById("news");
+const toggleButton = document.getElementById("toggle-news");
+
+toggleButton.addEventListener("click", () => {
+    if (newsSection.style.display === "none") {
+        newsSection.style.display = "block"; 
+        toggleButton.textContent = "Hide News";
+    } else {
+        newsSection.style.display = "none"; 
+        toggleButton.textContent = "Show News";
+    }
+});
