@@ -374,3 +374,22 @@ body::before {
 @media (max-width: 500px) {
     body::before { filter: blur(0.2px); opacity: 0.5; }
 }
+
+/* News toggle button */
+#toggle-news {
+    position: fixed;
+    right: 40px;
+    top: calc(50% - 140px);
+    z-index: 101;
+    padding: 6px 3px;
+    background: #2a7de1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+#toggle-news:hover {
+    background: #1e6bc4;
+}
