@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+ <header>
+    <div class="nav-wrapper">
+        <a class="brand" href="#home" aria-label="San Jac Esports Club home">
+            <img src="images/sjlogo-removebg.png" alt="San Jac Esports Club logo" />
+        </a>
+        <div class="brand-name">San Jac Esports</div>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li class="teams-list">
+                <a href="#"><span>Teams</span></a>
+                <ul class="dropdown">
+                <li><a href="esportsgames/blackops6.html"><span>Black Ops 6</span></a></li>
+                <li><a href="esportsgames/nba2k.html"><span>NBA 2K</span></a></li>
+                <li><a href="esportsgames/smashbros.html"><span>Smash Bros</span></a></li>
+                <li><a href="esportsgames/mariokart8.html"><span>Mario Kart 8</span></a></li>
+                <li><a href="esportsgames/marvelrivals.html"><span>Marvel Rivals</span></a></li>
+                <li><a href="esportsgames/leaguelegends.html"><span>League of Legends</span></a></li>
+                <li><a href="esportsgames/overwatch.html"><span>Overwatch</span></a></li>
+                </ul>
+            </li>
+                <li><a href="schedule.html"><span>Schedule</span></a></li>
+                <li><a href="news.html"><span>News</span></a></li>
+                <li><a href="join.html"><span>Join</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li class="social-media">
+                <a href="#"><span>Social Media</span></a>
+                <ul class="dropdown">
+                <li><a href="https://twitch" target="_blank"><span>Twitch</span></a></li>
+                <li><a href="https://www.instagram.com/sjcd_ravenesports?igsh=aXozemI1Ymd5Z2R3"><span>Instagram</span></a></li>
+                <li><a href="https://youtube.com" target="_blank"><span>YouTube</span></a></li>
+                </ul>
+            </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="aboutbanner" aria-label="aboutbanner">
+        <div class="videobox">
+            <video autoplay muted loop>
+                <source src="media/Street fighter against lone star.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+<main class="about-page">
+
+    <section class="about-intro">
+        <h2>About Our Club</h2>
+        <p>The San Jac Esports Club is a community of passionate gamers, strategists, and team players. 
+           We aim to create an environment where students can compete, connect, and grow both in and out of the game. 
+           Whether you’re into shooters, MOBAs, or strategy games, there’s a place for you here.</p>
+    </section>
+
+    <section class="admin-section">
+        <h2>Meet Our Administrator</h2>
+        <div class="admin-card">
+            <img src="images/admindj.png" alt="Club Administrator">
+            <div class="admin-info">
+                <h3>David Thomas</h3>
+                <p>David Thomas (a.k.a DJ) is the driving force behind San Jac Esports. With years of gaming experience 
+                   and a passion for student engagement, DJ ensures that every member has the support they need 
+                   to reach their potential both in tournaments and in teamwork.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3 class="question">Do we compete against other colleges?</h3>
+            <p class="answer">Yes! Our teams regularly participate in online scrimmages against other colleges each week, 
+                and we also travel to in-person tournaments hosted by different campuses throughout the season. </p>
+
+            <h3 class="question">Where can I find updates and announcements?</h3>
+            <p class="answer">Join our Discord! You’ll find all the latest updates, event info, and announcements there.<br>
+               <a href="https://discord.gg/j6jZHQj2JE" target="_blank"> Join our Discord Server</a></p>
+          
+            <h3 class="question">Can I join more than one team?</h3>
+            <p class="answer">Yes, you can join multiple teams as long as you’re able to commit to each team’s practice schedule and scrimmages.</p>
+        </div>
+    </section>
+
+</main>
+
+ <footer>
+        <img src="images/sjlogo-removebg.png"/>
+        <p class="footer-links" style="margin-top:10px;">
+          <a href="#home">Home</a>
+          <a href="#teams">Teams</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#news">News</a>
+          <a href="#join">Join</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </p>
+        <p>&copy; <span id="year"></span> San Jac Esports Club. All rights reserved.</p>
+    </footer>
+
+    <script> 
+        $(document).ready(function() {
+        $(".answer").hide();
+        $(".question").click(function() {
+            $(this).next(".answer").slideToggle(300);
+            $(this).toggleClass("open");
+        });
+    });
+    </script>
+    
+    <script src="javascript/java.js"></script>
+
+</body>
+</html>

@@ -375,11 +375,14 @@ body::before {
     body::before { filter: blur(0.2px); opacity: 0.5; }
 }
 
+
+
+
 /* News toggle button */
 #toggle-news {
     position: fixed;
     right: 40px;
-    top: calc(50% - 140px);
+    top: calc(50% - 140px); /* adjust so button is above the news section */
     z-index: 101;
     padding: 6px 3px;
     background: #2a7de1;
@@ -392,4 +395,134 @@ body::before {
 }
 #toggle-news:hover {
     background: #1e6bc4;
+}
+
+
+/* About Page Styles */
+
+.about-page {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.about-intro {
+    background: rgba(40, 40, 50, 0.7);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 100, 255, 0.4);
+    text-align: center;
+}
+
+.admin-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.admin-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 20, 30, 0.8);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+.admin-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 4px solid #2a7de1;
+}
+
+.admin-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.faq-section {
+    margin-top: 60px;
+}
+
+.faq {
+    background: rgba(30, 30, 40, 0.8);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 15px #edee9c;
+}
+
+.question {
+    cursor: pointer;
+    padding: 12px;
+    background: #2a7de1;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.question:hover {
+    color: black;
+    background: #edee9c;
+    filter: brightness(90%);
+}
+
+.answer {
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.question.open {
+    background: #ffd500;
+    color: #000;
+}
+
+.aboutbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: #091022;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.aboutbanner .videobox {
+    width: 100%;
+    max-width: 1800px;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(255, 223, 93, 0.4);
+    overflow: hidden;
+}
+
+.aboutbanner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 600px) {
+    .aboutbanner .videobox video {
+        object-position: center 25%;
+    }
+}
+
+
+.faq-section a {
+    color: #2a7de1;
+    font-weight: 600;
+    text-decoration: none;
+}
+.faq-section a:hover {
+    text-decoration: underline;
 }
