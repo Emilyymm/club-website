@@ -113,5 +113,17 @@
         <p>&copy; <span id="year"></span> San Jac Esports Club. All rights reserved.</p>
     </footer>
 
+    <script> 
+        $(document).ready(function() {
+        $(".answer").hide();
+        $(".question").click(function() {
+            $(this).next(".answer").slideToggle(300);
+            $(this).toggleClass("open");
+        });
+    });
+    </script>
+    
+    <script src="javascript/java.js"></script>
+
 </body>
 </html>
