@@ -268,8 +268,9 @@ button { background: #2a7de1; color: #fff; border: 0; padding: 10px 14px; border
 button:hover { background: #1e6bc4; }
 
 /* Footer */
-footer { padding: 16px; color: #b9c7de; font-size: 14px; }
-footer img { width: 150px; height: 58px; border-radius: 10px; }
+footer { padding: 16px; color: #b9c7de; font-size: 14px; text-align: center;}
+footer img { width: 150px; height: 58px; border-radius: 10px; display: block;
+    margin: 0 auto;}
 
 /* Schedule */
 #schedule, .schedule-section {
